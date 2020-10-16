@@ -1,0 +1,17 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/andy-wolf/spring-cloud-config-server-demo-data.git
+          #searchPaths: '{application}'
+          #username: xxx
+          #password: xxx
+
+          clone-on-start: true
+logging:
+  level:
+    org.springframework.cloud.config.server: DEBUG
